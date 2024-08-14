@@ -1,0 +1,116 @@
+.estore-prod {
+	height: 150px !important;
+	max-width: 100%;
+}
+
+.errors {
+	color: red;
+	font-style: italic;
+}
+
+.detail-img {
+	max-width: 100%;
+	max-height: 400px;
+}
+
+.detail-info li {
+	font-family: Arial, sans-serif;
+	/* Chọn font chữ */
+	font-size: 16px;
+	/* Kích thước chữ */
+	color: #333;
+	/* Màu chữ */
+	margin-bottom: 10px;
+	/* Khoảng cách giữa các mục */
+	list-style-type: none;
+	/* Loại bỏ dấu chấm hoặc dấu số */
+}
+
+.detail-info li::before {
+	content: "\2022";
+	/* Sử dụng dấu chấm nhỏ làm dấu đầu mỗi mục */
+	color: #007bff;
+	/* Màu của dấu chấm */
+	font-weight: bold;
+	/* In đậm dấu chấm */
+	margin-right: 5px;
+	/* Khoảng cách giữa dấu chấm và nội dung */
+}
+
+.thumb-img {
+	width: 80px;
+	height: 80px;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 3px;
+	box-shadow: 0px 0px 2px blue;
+}
+
+.thumb-img:hover {
+	box-shadow: 0px 0px 3px red;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.search-container {
+	position: relative;
+	width: 100%;
+	/* Đặt chiều rộng của ô tìm kiếm theo ý muốn */
+	border: 1px solid #ccc;
+	/* Đặt viền */
+	border-radius: 5px;
+	/* Đặt góc cong */
+	padding: 5px;
+	/* Đặt padding */
+}
+
+.search-input {
+	width: calc(100% - 40px);
+	/* Sử dụng calc() để tính toán kích thước */
+	padding: 10px 40px 10px 10px;
+	/* Chèn thêm khoảng trống để chứa hình ảnh */
+	box-sizing: border-box;
+	/* Đảm bảo padding không ảnh hưởng đến chiều rộng tổng thể */
+	border: none;
+	/* Loại bỏ viền */
+	outline: none;
+	/* Loại bỏ đường viền khi focus */
+}
+
+.search-icon {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 30px;
+	/* Đặt kích thước của hình ảnh */
+	height: 30px;
+	/* Đặt kích thước của hình ảnh */
+	cursor: pointer;
+	/* Đặt con trỏ chuột thành hình tay khi di chuột qua hình ảnh */
+}
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	/* Xoá bỏ khoảng cách giữa các ô */
+}
+
+.table th,
+.table td {
+	padding: 10px;
+	/* Điều chỉnh khoảng cách giữa nội dung và viền của ô */
+	text-align: center;
+	/* Căn giữa nội dung của ô */
+	border: 1px solid #ddd;
+	/* Định dạng đường viền của ô */
+}
+
+.table th {
+	background-color: #f2f2f2;
+	/* Màu nền của các ô tiêu đề */
+}
